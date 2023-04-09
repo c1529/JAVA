@@ -4,6 +4,7 @@ public class fangfa1 {
         A aa = new A();
         aa.print(5);
         aa.sayOK(5);
+        aa.m1();
     }
 }
 
@@ -18,7 +19,18 @@ class A{
         int a1 = b*b;
         print(a1);
     }
+    //跨类中
+    public void m1(){
+        B bb = new B();
+        bb.hi();
+    }
 }
 
+class B{
 
+    public void hi()
+    {
+        System.out.println("B类中的hi方法被执行");
+    }
+}
 
